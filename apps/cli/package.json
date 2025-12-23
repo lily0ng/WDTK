@@ -1,0 +1,15 @@
+{
+  "name": "webdevkit-cli",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "webdevkit": "bin/webdevkit.js"
+  },
+  "scripts": {
+    "dev": "node bin/webdevkit.js --help"
+  },
+  "dependencies": {
+    "@webdevkit/core": "workspace:*",
+    "commander": "^12.1.0"
+  }
+}
