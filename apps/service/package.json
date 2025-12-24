@@ -1,0 +1,17 @@
+{
+  "name": "webdevkit-service",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node src/index.js",
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "@webdevkit/db": "file:../../packages/db",
+    "@webdevkit/sync": "file:../../packages/sync",
+    "@webdevkit/tools": "file:../../packages/tools",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "ws": "^8.18.0"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "@webdevkit/tools",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "dependencies": {
+    "@webdevkit/core": "file:../core",
+    "@webdevkit/db": "file:../db",
+    "@webdevkit/plugins": "file:../plugins",
+    "@webdevkit/supabase": "file:../supabase",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "zxcvbn": "^4.4.2"
+  }
+}

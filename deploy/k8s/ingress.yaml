@@ -1,0 +1,17 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: webdevkit
+  namespace: webdevkit
+spec:
+  rules:
+    - host: webdevkit.local
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: webdevkit-web
+                port:
+                  number: 3000

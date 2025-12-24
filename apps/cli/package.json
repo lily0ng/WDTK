@@ -9,7 +9,10 @@
     "dev": "node bin/webdevkit.js --help"
   },
   "dependencies": {
-    "@webdevkit/core": "workspace:*",
-    "commander": "^12.1.0"
+    "@webdevkit/core": "file:../../packages/core",
+    "@webdevkit/db": "file:../../packages/db",
+    "@webdevkit/tools": "file:../../packages/tools",
+    "commander": "^12.1.0",
+    "node-fetch": "^3.3.2"
   }
 }

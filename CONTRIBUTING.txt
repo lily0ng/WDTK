@@ -1,0 +1,6 @@
+Contributing
+
+- Create a branch
+- Keep changes small and focused
+- Run: npm run build
+- Run: node security-scan.js

@@ -1,0 +1,22 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: deploy/docker/web.Dockerfile
+      args:
+        - VITE_WEBDEVKIT_SERVICE_URL=http://127.0.0.1:3001
+    ports:
+      - "3000:3000"
+    depends_on:
+      - service
+
+  service:
+    build:
+      context: .
+      dockerfile: deploy/docker/service.Dockerfile
+    ports:
+      - "3001:3001"
+    environment:
+      - WEBDEVKIT_SERVICE_PORT=3001
+      - WEBDEVKIT_SERVICE_HOST=0.0.0.0
+

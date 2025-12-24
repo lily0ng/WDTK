@@ -1,0 +1,8 @@
+{
+  "name": "@webdevkit/exporters",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.js"
+  }
+}

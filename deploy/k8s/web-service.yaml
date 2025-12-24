@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: webdevkit-web
+  namespace: webdevkit
+spec:
+  type: ClusterIP
+  selector:
+    app: webdevkit-web
+  ports:
+    - name: http
+      port: 3000
+      targetPort: 3000

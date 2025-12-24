@@ -1,0 +1,18 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: WebDevKit starter CloudFormation (placeholders)
+
+Parameters:
+  EnvironmentName:
+    Type: String
+    Default: webdevkit
+
+Resources:
+  LogGroup:
+    Type: AWS::Logs::LogGroup
+    Properties:
+      LogGroupName: !Sub "/${EnvironmentName}/webdevkit"
+      RetentionInDays: 7
+
+Outputs:
+  Notes:
+    Value: "Starter template created. Extend with ECS/EKS resources as needed."

@@ -3,8 +3,8 @@
   "private": true,
   "main": "electron/main.cjs",
   "scripts": {
-    "dev": "wait-on http://127.0.0.1:3000 && electron .",
-    "start": "electron ."
+    "dev": "wait-on http://127.0.0.1:3000 http://127.0.0.1:3001/health && env -u ELECTRON_RUN_AS_NODE electron .",
+    "start": "env -u ELECTRON_RUN_AS_NODE electron ."
   },
   "dependencies": {
     "electron": "^31.0.0"

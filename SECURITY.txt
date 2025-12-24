@@ -1,0 +1,9 @@
+Security
+
+Do not commit secrets.
+
+Recommended:
+
+- Use environment variables for keys
+- Rotate credentials regularly
+- Run: node security-scan.js
