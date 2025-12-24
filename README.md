@@ -61,29 +61,29 @@
   - [🚀 What is WDTK?](#-what-is-wdtk)
   - [🎯 Perfect For](#-perfect-for)
   - [🏆 Key Highlights](#-key-highlights)
-  - [🪄 Virtual Style Effect](#-virtual-style-effect)
-  - [📌 Project Status](#-project-status)
-- [🏗️ Architecture](#-architecture)
+- [🪄 Virtual Style Effect](#-virtual-style-effect)
+- [📌 Project Status](#-project-status)
+- [🏗️ Architecture](#️-architecture)
   - [📐 Monorepo Layout](#-monorepo-layout)
   - [🔄 Tool Execution Flow](#-tool-execution-flow)
 - [🧩 Interfaces](#-interfaces)
-- [🖥️ Web UI](#-web-ui)
+- [🖥️ Web UI](#️-web-ui)
 - [🧰 Tools](#-tools)
   - [🧰 Utility tool pack](#-utility-tool-pack)
   - [🤖 AI / LLM tools](#-ai--llm-tools)
   - [🧪 Cyber codecs](#-cyber-codecs)
-  - [🛡️ Security scan](#-security-scan)
+  - [🛡️ Security scan](#️-security-scan)
 - [🔌 Plugins](#-plugins)
 - [💾 Data \& Storage](#-data--storage)
-  - [🗄️ SQLite database](#-sqlite-database)
+  - [🗄️ SQLite database](#️-sqlite-database)
   - [🧩 Plugins storage](#-plugins-storage)
-  - [☁️ Optional sync](#-optional-sync)
+  - [☁️ Optional sync](#️-optional-sync)
 - [🚀 Quick Start](#-quick-start)
 - [🐳 Docker (build + run)](#-docker-build--run)
 - [🧪 Security Scan Usage](#-security-scan-usage)
 - [🤖 Local LLM Services](#-local-llm-services)
 - [🧰 Scripts](#-scripts)
-- [🛡️ Security](#-security)
+- [🛡️ Security](#️-security)
 - [🧭 Git Style](#-git-style)
 - [🌿 Git Graph](#-git-graph)
 - [👩‍💻 Project Owner](#-project-owner)
@@ -277,6 +277,9 @@ npm install
 
 # Run everything (web + service + desktop)
 npm run dev
+npm run dev:service
+npm run dev:web
+npm run dev:desktop
 ```
 
 Verify the service:
